@@ -1,10 +1,10 @@
 function game() {
     for (let i = 0; i < 5; ++i) {
-        PlayRound(getPlayerChoice(), getComputerChoice());
+        playRound(getPlayerChoice(), getComputerChoice());
     }
 }
 
-function PlayRound(playerSelection, computerSelection) {
+function playRound(playerSelection, computerSelection) {
     // finds potential player wins
     if ((playerSelection == "rock" && computerSelection == "scissors") ||
         (playerSelection == "paper" && computerSelection == "rock") ||
